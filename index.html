@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ideal weight calculator</title>
+    <script src="script.js"></script>  
+  </head>
+  <body>
+    <header>
+      <img alt="healthy weight" src="src/T-rightWeight-enHD-AR1.jpg" />
+    </header>
+    <main>
+      <section id="calculator">    
+        <h2>Ideal weight calculator</h2>
+        <section id="elements">
+          Enter your height: (cm)<br>
+          <input id="height" type="text" name="height" value="180"><br>
+          Enter your weight: (kg)<br>
+          <input id="weight" type="text" name="weight" value="72"><br>
+          <form>
+            <input id="man" type="radio" name="gender" value="male" checked> Male<br>
+            <input id="woman" type="radio" name="gender" value="female"> Female<br>
+          </form>
+            <input onclick="calc()" type="submit" value="Calculate" />
+            <input onclick="reset()" type="submit" value="  Reset  " />
+        </section>
+        <section id="result-section">
+          <p id="result"></p>
+          <p id="result-explanation"></p>
+        </section>
+      </section>
+      <section id="references">
+        <h2>References</h2>
+          <ul>
+            <li><a href="http://www.wellness.com/reference/health-and-wellness/ideal-body-weight">Ideal body weight</a></li>
+            <li><a href="http://www.vertex42.com/ExcelTemplates/ideal-weight-chart.html">Ideal Weight Chart & Calculator</a></li>
+            <li><a href="http://m.teenshealth.org/en/teens/weight-height.html">m.teenshealth.org</a></li>
+          </ul>
+      </section>
+    </main>     
+  </body>
+</html>
